@@ -8,8 +8,7 @@ searchInput.addEventListener('input', function () {
 
     cards.forEach(function (card) {
         const name = card.dataset.name.toLowerCase();
-        const category = card.dataset.category.toLowerCase();
-        const matches = name.includes(query) || category.includes(query);
+        const matches = query === '' || name.includes(query);
 
         card.hidden = !matches;
         if (matches) visibleCount++;
