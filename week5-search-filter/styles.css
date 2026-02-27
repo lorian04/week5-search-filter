@@ -37,6 +37,45 @@ main {
     padding: 20px;
 }
 
+/* ===== SEARCH ===== */
+.search-container {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border: 1.5px solid #d2d2d7;
+    border-radius: 12px;
+    padding: 10px 16px;
+    max-width: 480px;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.search-icon {
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+#search-input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+    background: transparent;
+    color: #1d1d1f;
+}
+
+.search-container:focus-within {
+    border-color: #0071e3;
+    box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.2);
+}
+
+#no-results {
+    text-align: center;
+    color: #86868b;
+    font-size: 1rem;
+    padding: 40px 0;
+}
+
 /* ===== PRODUCT GRID ===== */
 .products-grid {
     display: grid;
